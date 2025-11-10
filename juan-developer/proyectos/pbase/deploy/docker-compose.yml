@@ -3,4 +3,4 @@ services:
     build:
       context: /home/juan/devops/DAW/juan-developer
       dockerfile: ./dockerfiles/base/ubuntu/Dockerfile
-    container_name: base
+    container_name: base-juan
