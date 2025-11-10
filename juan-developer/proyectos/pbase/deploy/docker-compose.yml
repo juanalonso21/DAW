@@ -2,5 +2,5 @@ services:
   base:
     build:
       context: /home/juan/devops/DAW/juan-developer
-      dockerfile: /dockerfiles/base/ubuntu/Dockerfile
+      dockerfile: ./dockerfiles/base/ubuntu/Dockerfile
     container_name: base
