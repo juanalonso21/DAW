@@ -1,0 +1,4 @@
+services:
+  base:
+    build:
+      context: /home/juan/devops/DAW/juan-developer/dockerfiles/base/ubuntu
