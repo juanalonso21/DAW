@@ -4,5 +4,7 @@ services:
       context: ..
       dockerfile: deploy/Dockerfile
     ports:
-      - "8080:80"
-    
+      - "8070:80"
+    image: juanalonso-ptaller-webserver:1.0
+    container_name: juanalonso-ptaller-webserver
+    restart: unless-stopped
