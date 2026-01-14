@@ -1,0 +1,8 @@
+services:
+  webtaller:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "8080:80"
+    
