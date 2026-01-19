@@ -14,7 +14,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            # IMPORTANTE: Este nombre debe ser IDÉNTICO al de tu archivo servicio-webtaller.yml
-            name: servicio-webtaller 
+            name: webtaller-service
             port:
-              number: 30070 # Este es el puerto interno del servicio (no el nodePort 30070)
+              number: 30070 
