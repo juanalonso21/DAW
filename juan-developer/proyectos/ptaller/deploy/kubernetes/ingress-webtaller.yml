@@ -17,4 +17,4 @@ spec:
             # IMPORTANTE: Este nombre debe ser IDÉNTICO al de tu archivo servicio-webtaller.yml
             name: servicio-webtaller 
             port:
-              number: 80 # Este es el puerto interno del servicio (no el nodePort 30070)
+              number: 30070 # Este es el puerto interno del servicio (no el nodePort 30070)
