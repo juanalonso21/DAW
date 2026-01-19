@@ -1,7 +1,7 @@
 services:
   webtaller:
     build:
-      context: ..
+      context: C:\modulos\2DAW\DAW\juan-developer
       dockerfile: deploy/Dockerfile
     ports:
       - "8070:80"
