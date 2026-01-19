@@ -5,14 +5,16 @@ metadata:
   namespace: proyectotaller
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-  spec:
-    rules:
-      - host: webtaller.franparra.es
-        http:
-          path: /
-          pathType: Prefix
-          backend:
-            service:
-              name: webtaller-service
-              port:
-                number: 80
+spec:
+  rules:
+  - host: webtaller.franparra.es
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            # IMPORTANTE: Este nombre debe ser IDÉNTICO al de tu archivo servicio-webtaller.yml
+            name: servicio-webtaller 
+            port:
+              number: 80 # Este es el puerto interno del servicio (no el nodePort 30070)
